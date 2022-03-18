@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter} from "react-router-dom";
-import { logEvents } from "./appcuesComponents/EventLog";
 import AppcuesRouter from "./Appcues";
 
 /*
@@ -20,8 +19,8 @@ const App = () => {
     window.localStorage.setItem("timestamp", Date.now()); // if no timestamp, sets it to now
   }
   
-  const userId = window.localStorage.currentUser;
-  const currentTime = parseInt(window.localStorage.timestamp);
+  //const userId = window.localStorage.currentUser;
+ // const currentTime = parseInt(window.localStorage.timestamp);
 
   //window.Appcues.on("all", function(name, payload) {
     // console.log(name);     // uncomment these two lines if you'd like to
