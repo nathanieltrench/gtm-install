@@ -18,10 +18,6 @@ new components to the app, you'll want to include them as a <Route> as seen belo
 const AppcuesRouter = () => {
   const location = useLocation(); // installation using React hooks
 
-  useEffect(() => {
-    window.Appcues.page();
-  }, [location]);
-
   return (
     <div id="main-app">
       <Navigation />

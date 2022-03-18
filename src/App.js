@@ -23,21 +23,16 @@ const App = () => {
   const userId = window.localStorage.currentUser;
   const currentTime = parseInt(window.localStorage.timestamp);
 
-  window.Appcues.identify(userId, { // feel free to add in any user properties here
-    role: "tester",
-    signupDate: currentTime
-  })
-
-  window.Appcues.on("all", function(name, payload) {
+  //window.Appcues.on("all", function(name, payload) {
     // console.log(name);     // uncomment these two lines if you'd like to
     // console.log(payload);  // log all events into the dev tools console
 
-    logEvents(name, payload); // adds events into the event log on the page
-  })
+    //logEvents(name, payload); // adds events into the event log on the page
+ // })
 
-  window.Appcues.loadLaunchpad("#launchpad", { // loads Launchpad on this element
-    position: "right"
-  })
+  //window.Appcues.loadLaunchpad("#launchpad", { // loads Launchpad on this element
+  //  position: "right"
+ // })
   
   return ( 
     <BrowserRouter> 
