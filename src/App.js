@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter} from "react-router-dom";
 import AppcuesRouter from "./Appcues";
-import binoculars from "./resources/binoculars.png";
 
 /*
 The AppcuesRouter contains the Appcues.page call, as well as all the app's page
