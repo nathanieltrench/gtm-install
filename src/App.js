@@ -30,10 +30,10 @@ const App = () => {
     //logEvents(name, payload); // adds events into the event log on the page
   //})
 
-  window.Appcues.loadLaunchpad("#launchpad", { // loads Launchpad on this element
-    position: "right",
-    icon: <img src={binoculars} alt="blurple binocular icon"></img>
-  })
+  //window.Appcues.loadLaunchpad("#launchpad", { // loads Launchpad on this element
+    //position: "right",
+    //icon: <img src={binoculars} alt="blurple binocular icon"></img>
+ // })
   
   return ( 
     <BrowserRouter> 
