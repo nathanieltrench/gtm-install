@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter} from "react-router-dom";
 import AppcuesRouter from "./Appcues";
+import binoculars from "./resources/binoculars.png";
 
 /*
 The AppcuesRouter contains the Appcues.page call, as well as all the app's page
@@ -27,11 +28,12 @@ const App = () => {
     // console.log(payload);  // log all events into the dev tools console
 
     //logEvents(name, payload); // adds events into the event log on the page
- // })
+  //})
 
-  //window.Appcues.loadLaunchpad("#launchpad", { // loads Launchpad on this element
-  //  position: "right"
- // })
+  window.Appcues.loadLaunchpad("#launchpad", { // loads Launchpad on this element
+    position: "right",
+    icon: <img src={binoculars} alt="blurple binocular icon"></img>
+  })
   
   return ( 
     <BrowserRouter> 
