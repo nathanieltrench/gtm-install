@@ -10,6 +10,9 @@ This is also where the Appcues.identify call is made, as well as any event liste
 like Appcues.on so that they will be called every time the page loads.
 */
 
+var userId = "test123";
+console.log(userId);
+
 const App = () => {
   if (!window.localStorage.currentUser) { // persists the current user across page refresh
     window.localStorage.setItem("currentUser", "testUser"); // if no current user, set userID to "testUser"
